@@ -199,6 +199,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#" class="portfolio1" id="portfolio1" name="portfolio1">Portfolio</a></li>
                     <li><a id="contact1">Contact</a></li>
+                    <li><a id="resume1">Resume</a></li>
                   </ul>
                 </div>
             </nav>
@@ -272,7 +273,7 @@
             </div><br><br>
 
             <div align="center">
-              <div class=resume>
+              <div class=resume id="resume">
               <a href="https://www.canva.com/design/DAEJeUv4zFI/UynLtOfbNMaqJ3xZ8FiIqQ/view?utm_content=DAEJeUv4zFI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"><button type="button" id="viewmoreprojects" name="viewmoreprojects" class="viewmoreprojects">View My Resume</button></a> 
               </div>
             </div>
@@ -343,6 +344,12 @@ $("#portfolio1").click(function() {
 $("#contact1").click(function() {
   $('html, body').animate({
     scrollTop: $("#contact").offset().top
+  }, 2000);
+});
+
+$("#resume1").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#resume").offset().top
   }, 2000);
 });
 
